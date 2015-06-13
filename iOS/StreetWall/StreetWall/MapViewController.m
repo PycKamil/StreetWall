@@ -6,15 +6,15 @@
 //  Copyright (c) 2015 Kamil Pyć. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MapViewController.h"
 #import <MapKit/MapKit.h>
 
-@interface ViewController ()
+@interface MapViewController ()
 @property (weak, nonatomic) IBOutlet MKMapView *MapView;
 
 @end
 
-@implementation ViewController
+@implementation MapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

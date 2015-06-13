@@ -10,12 +10,14 @@
 		1726D2301B2C25D7006A27F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D22F1B2C25D7006A27F3 /* main.m */; };
 		1726D2331B2C25D7006A27F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2321B2C25D7006A27F3 /* AppDelegate.m */; };
 		1726D2361B2C25D7006A27F3 /* StreetWall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2341B2C25D7006A27F3 /* StreetWall.xcdatamodeld */; };
-		1726D2391B2C25D7006A27F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2381B2C25D7006A27F3 /* ViewController.m */; };
+		1726D2391B2C25D7006A27F3 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2381B2C25D7006A27F3 /* MapViewController.m */; };
 		1726D23C1B2C25D7006A27F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1726D23A1B2C25D7006A27F3 /* Main.storyboard */; };
 		1726D23E1B2C25D7006A27F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1726D23D1B2C25D7006A27F3 /* Images.xcassets */; };
 		1726D2411B2C25D7006A27F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1726D23F1B2C25D7006A27F3 /* LaunchScreen.xib */; };
 		1726D24D1B2C25D7006A27F3 /* StreetWallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D24C1B2C25D7006A27F3 /* StreetWallTests.m */; };
 		1726D2571B2C2BEE006A27F3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1726D2561B2C2BEE006A27F3 /* MapKit.framework */; };
+		1726D25A1B2C2FA0006A27F3 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2591B2C2FA0006A27F3 /* AddViewController.m */; };
+		1726D25D1B2C2FB0006A27F3 /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D25C1B2C2FB0006A27F3 /* WallViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,8 +37,8 @@
 		1726D2311B2C25D7006A27F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1726D2321B2C25D7006A27F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1726D2351B2C25D7006A27F3 /* StreetWall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StreetWall.xcdatamodel; sourceTree = "<group>"; };
-		1726D2371B2C25D7006A27F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1726D2381B2C25D7006A27F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1726D2371B2C25D7006A27F3 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		1726D2381B2C25D7006A27F3 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		1726D23B1B2C25D7006A27F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1726D23D1B2C25D7006A27F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1726D2401B2C25D7006A27F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -44,6 +46,10 @@
 		1726D24B1B2C25D7006A27F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1726D24C1B2C25D7006A27F3 /* StreetWallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreetWallTests.m; sourceTree = "<group>"; };
 		1726D2561B2C2BEE006A27F3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1726D2581B2C2FA0006A27F3 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		1726D2591B2C2FA0006A27F3 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		1726D25B1B2C2FB0006A27F3 /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallViewController.h; sourceTree = "<group>"; };
+		1726D25C1B2C2FB0006A27F3 /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +95,12 @@
 			children = (
 				1726D2311B2C25D7006A27F3 /* AppDelegate.h */,
 				1726D2321B2C25D7006A27F3 /* AppDelegate.m */,
-				1726D2371B2C25D7006A27F3 /* ViewController.h */,
-				1726D2381B2C25D7006A27F3 /* ViewController.m */,
+				1726D25B1B2C2FB0006A27F3 /* WallViewController.h */,
+				1726D25C1B2C2FB0006A27F3 /* WallViewController.m */,
+				1726D2581B2C2FA0006A27F3 /* AddViewController.h */,
+				1726D2591B2C2FA0006A27F3 /* AddViewController.m */,
+				1726D2371B2C25D7006A27F3 /* MapViewController.h */,
+				1726D2381B2C25D7006A27F3 /* MapViewController.m */,
 				1726D23A1B2C25D7006A27F3 /* Main.storyboard */,
 				1726D23D1B2C25D7006A27F3 /* Images.xcassets */,
 				1726D23F1B2C25D7006A27F3 /* LaunchScreen.xib */,
@@ -175,6 +185,7 @@
 				TargetAttributes = {
 					1726D2291B2C25D7006A27F3 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = D8XF474LXL;
 					};
 					1726D2451B2C25D7006A27F3 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -226,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1726D25D1B2C2FB0006A27F3 /* WallViewController.m in Sources */,
+				1726D25A1B2C2FA0006A27F3 /* AddViewController.m in Sources */,
 				1726D2361B2C25D7006A27F3 /* StreetWall.xcdatamodeld in Sources */,
 				1726D2331B2C25D7006A27F3 /* AppDelegate.m in Sources */,
-				1726D2391B2C25D7006A27F3 /* ViewController.m in Sources */,
+				1726D2391B2C25D7006A27F3 /* MapViewController.m in Sources */,
 				1726D2301B2C25D7006A27F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,9 +370,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StreetWall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -367,9 +383,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = StreetWall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
