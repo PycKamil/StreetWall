@@ -1,1 +1,0 @@
-../../../DVGAssetPickerController/Pod/Classes/DVGAssetPickerCheckmarkView.h
