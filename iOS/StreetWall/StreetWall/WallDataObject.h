@@ -18,4 +18,6 @@
 @property (nonatomic, strong) NSNumber *height;
 @property (nonatomic, strong) NSNumber *width;
 
+- (void)sendToServer;
+
 @end

@@ -4,6 +4,7 @@
 pod 'MagicalRecord', '~> 2.3'
 pod 'DVGAssetPickerController'
 pod 'DXCustomCallout-ObjC'
+pod 'AFNetworking', '~> 2.0'
 
 target 'StreetWall' do
 
