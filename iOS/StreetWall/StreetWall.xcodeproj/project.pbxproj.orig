@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // !$*UTF8*$!
 {
 	archiveVersion = 1;
@@ -475,6 +476,7 @@
 	};
 	rootObject = 1726D2221B2C25D7006A27F3 /* Project object */;
 }
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -1587,3 +1589,4 @@ fi
 	<string>1726D2221B2C25D7006A27F3</string>
 </dict>
 </plist>
+>>>>>>> master

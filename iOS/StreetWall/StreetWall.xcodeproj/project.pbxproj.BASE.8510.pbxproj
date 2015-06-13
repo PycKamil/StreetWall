@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1726D2301B2C25D7006A27F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D22F1B2C25D7006A27F3 /* main.m */; };
+		1726D2331B2C25D7006A27F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2321B2C25D7006A27F3 /* AppDelegate.m */; };
+		1726D2361B2C25D7006A27F3 /* StreetWall.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2341B2C25D7006A27F3 /* StreetWall.xcdatamodeld */; };
+		1726D2391B2C25D7006A27F3 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2381B2C25D7006A27F3 /* MapViewController.m */; };
+		1726D23C1B2C25D7006A27F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1726D23A1B2C25D7006A27F3 /* Main.storyboard */; };
+		1726D23E1B2C25D7006A27F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1726D23D1B2C25D7006A27F3 /* Images.xcassets */; };
+		1726D2411B2C25D7006A27F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1726D23F1B2C25D7006A27F3 /* LaunchScreen.xib */; };
+		1726D24D1B2C25D7006A27F3 /* StreetWallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D24C1B2C25D7006A27F3 /* StreetWallTests.m */; };
+		1726D2571B2C2BEE006A27F3 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1726D2561B2C2BEE006A27F3 /* MapKit.framework */; };
+		1726D25A1B2C2FA0006A27F3 /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D2591B2C2FA0006A27F3 /* AddViewController.m */; };
+		1726D25D1B2C2FB0006A27F3 /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D25C1B2C2FB0006A27F3 /* WallViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1726D2471B2C25D7006A27F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1726D2221B2C25D7006A27F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1726D2291B2C25D7006A27F3;
+			remoteInfo = StreetWall;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1726D22A1B2C25D7006A27F3 /* StreetWall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetWall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1726D22E1B2C25D7006A27F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1726D22F1B2C25D7006A27F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1726D2311B2C25D7006A27F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1726D2321B2C25D7006A27F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1726D2351B2C25D7006A27F3 /* StreetWall.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StreetWall.xcdatamodel; sourceTree = "<group>"; };
+		1726D2371B2C25D7006A27F3 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		1726D2381B2C25D7006A27F3 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		1726D23B1B2C25D7006A27F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1726D23D1B2C25D7006A27F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1726D2401B2C25D7006A27F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1726D2461B2C25D7006A27F3 /* StreetWallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StreetWallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1726D24B1B2C25D7006A27F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1726D24C1B2C25D7006A27F3 /* StreetWallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StreetWallTests.m; sourceTree = "<group>"; };
+		1726D2561B2C2BEE006A27F3 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1726D2581B2C2FA0006A27F3 /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		1726D2591B2C2FA0006A27F3 /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		1726D25B1B2C2FB0006A27F3 /* WallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallViewController.h; sourceTree = "<group>"; };
+		1726D25C1B2C2FB0006A27F3 /* WallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1726D2271B2C25D7006A27F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1726D2571B2C2BEE006A27F3 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1726D2431B2C25D7006A27F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1726D2211B2C25D7006A27F3 = {
+			isa = PBXGroup;
+			children = (
+				1726D2561B2C2BEE006A27F3 /* MapKit.framework */,
+				1726D22C1B2C25D7006A27F3 /* StreetWall */,
+				1726D2491B2C25D7006A27F3 /* StreetWallTests */,
+				1726D22B1B2C25D7006A27F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1726D22B1B2C25D7006A27F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1726D22A1B2C25D7006A27F3 /* StreetWall.app */,
+				1726D2461B2C25D7006A27F3 /* StreetWallTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1726D22C1B2C25D7006A27F3 /* StreetWall */ = {
+			isa = PBXGroup;
+			children = (
+				1726D2311B2C25D7006A27F3 /* AppDelegate.h */,
+				1726D2321B2C25D7006A27F3 /* AppDelegate.m */,
+				1726D25B1B2C2FB0006A27F3 /* WallViewController.h */,
+				1726D25C1B2C2FB0006A27F3 /* WallViewController.m */,
+				1726D2581B2C2FA0006A27F3 /* AddViewController.h */,
+				1726D2591B2C2FA0006A27F3 /* AddViewController.m */,
+				1726D2371B2C25D7006A27F3 /* MapViewController.h */,
+				1726D2381B2C25D7006A27F3 /* MapViewController.m */,
+				1726D23A1B2C25D7006A27F3 /* Main.storyboard */,
+				1726D23D1B2C25D7006A27F3 /* Images.xcassets */,
+				1726D23F1B2C25D7006A27F3 /* LaunchScreen.xib */,
+				1726D2341B2C25D7006A27F3 /* StreetWall.xcdatamodeld */,
+				1726D22D1B2C25D7006A27F3 /* Supporting Files */,
+			);
+			path = StreetWall;
+			sourceTree = "<group>";
+		};
+		1726D22D1B2C25D7006A27F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1726D22E1B2C25D7006A27F3 /* Info.plist */,
+				1726D22F1B2C25D7006A27F3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1726D2491B2C25D7006A27F3 /* StreetWallTests */ = {
+			isa = PBXGroup;
+			children = (
+				1726D24C1B2C25D7006A27F3 /* StreetWallTests.m */,
+				1726D24A1B2C25D7006A27F3 /* Supporting Files */,
+			);
+			path = StreetWallTests;
+			sourceTree = "<group>";
+		};
+		1726D24A1B2C25D7006A27F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1726D24B1B2C25D7006A27F3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1726D2291B2C25D7006A27F3 /* StreetWall */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1726D2501B2C25D7006A27F3 /* Build configuration list for PBXNativeTarget "StreetWall" */;
+			buildPhases = (
+				1726D2261B2C25D7006A27F3 /* Sources */,
+				1726D2271B2C25D7006A27F3 /* Frameworks */,
+				1726D2281B2C25D7006A27F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreetWall;
+			productName = StreetWall;
+			productReference = 1726D22A1B2C25D7006A27F3 /* StreetWall.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1726D2451B2C25D7006A27F3 /* StreetWallTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1726D2531B2C25D7006A27F3 /* Build configuration list for PBXNativeTarget "StreetWallTests" */;
+			buildPhases = (
+				1726D2421B2C25D7006A27F3 /* Sources */,
+				1726D2431B2C25D7006A27F3 /* Frameworks */,
+				1726D2441B2C25D7006A27F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1726D2481B2C25D7006A27F3 /* PBXTargetDependency */,
+			);
+			name = StreetWallTests;
+			productName = StreetWallTests;
+			productReference = 1726D2461B2C25D7006A27F3 /* StreetWallTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1726D2221B2C25D7006A27F3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Kamil Pyć";
+				TargetAttributes = {
+					1726D2291B2C25D7006A27F3 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = D8XF474LXL;
+					};
+					1726D2451B2C25D7006A27F3 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 1726D2291B2C25D7006A27F3;
+					};
+				};
+			};
+			buildConfigurationList = 1726D2251B2C25D7006A27F3 /* Build configuration list for PBXProject "StreetWall" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1726D2211B2C25D7006A27F3;
+			productRefGroup = 1726D22B1B2C25D7006A27F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1726D2291B2C25D7006A27F3 /* StreetWall */,
+				1726D2451B2C25D7006A27F3 /* StreetWallTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1726D2281B2C25D7006A27F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1726D23C1B2C25D7006A27F3 /* Main.storyboard in Resources */,
+				1726D2411B2C25D7006A27F3 /* LaunchScreen.xib in Resources */,
+				1726D23E1B2C25D7006A27F3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1726D2441B2C25D7006A27F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1726D2261B2C25D7006A27F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1726D25D1B2C2FB0006A27F3 /* WallViewController.m in Sources */,
+				1726D25A1B2C2FA0006A27F3 /* AddViewController.m in Sources */,
+				1726D2361B2C25D7006A27F3 /* StreetWall.xcdatamodeld in Sources */,
+				1726D2331B2C25D7006A27F3 /* AppDelegate.m in Sources */,
+				1726D2391B2C25D7006A27F3 /* MapViewController.m in Sources */,
+				1726D2301B2C25D7006A27F3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1726D2421B2C25D7006A27F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1726D24D1B2C25D7006A27F3 /* StreetWallTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1726D2481B2C25D7006A27F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1726D2291B2C25D7006A27F3 /* StreetWall */;
+			targetProxy = 1726D2471B2C25D7006A27F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1726D23A1B2C25D7006A27F3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1726D23B1B2C25D7006A27F3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1726D23F1B2C25D7006A27F3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1726D2401B2C25D7006A27F3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1726D24E1B2C25D7006A27F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1726D24F1B2C25D7006A27F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1726D2511B2C25D7006A27F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = StreetWall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		1726D2521B2C25D7006A27F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = StreetWall/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		1726D2541B2C25D7006A27F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StreetWallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreetWall.app/StreetWall";
+			};
+			name = Debug;
+		};
+		1726D2551B2C25D7006A27F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StreetWallTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StreetWall.app/StreetWall";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1726D2251B2C25D7006A27F3 /* Build configuration list for PBXProject "StreetWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1726D24E1B2C25D7006A27F3 /* Debug */,
+				1726D24F1B2C25D7006A27F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1726D2501B2C25D7006A27F3 /* Build configuration list for PBXNativeTarget "StreetWall" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1726D2511B2C25D7006A27F3 /* Debug */,
+				1726D2521B2C25D7006A27F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1726D2531B2C25D7006A27F3 /* Build configuration list for PBXNativeTarget "StreetWallTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1726D2541B2C25D7006A27F3 /* Debug */,
+				1726D2551B2C25D7006A27F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1726D2341B2C25D7006A27F3 /* StreetWall.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1726D2351B2C25D7006A27F3 /* StreetWall.xcdatamodel */,
+			);
+			currentVersion = 1726D2351B2C25D7006A27F3 /* StreetWall.xcdatamodel */;
+			path = StreetWall.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1726D2221B2C25D7006A27F3 /* Project object */;
+}
