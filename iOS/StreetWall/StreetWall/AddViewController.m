@@ -11,7 +11,7 @@
 #import "WallDataObject.h"
 #import <RNActivityView/UIView+RNActivityView.h>
 
-@interface AddViewController ()<DVGAssetPickerDelegate, UITextViewDelegate>
+@interface AddViewController ()<DVGAssetPickerDelegate, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *wallPhoto;
 @property(nonatomic, strong) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UITextView *commentTextView;
@@ -81,7 +81,37 @@ shouldChangeTextInRange: (NSRange) range
 }
 
 -(void)contentPickerViewController:(DVGAssetPickerViewController *)controller clickedMenuItem:(DVGAssetPickerMenuItem)menuItem {
-    [controller dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:^{
+        UIImagePickerControllerSourceType sourceType;
+        switch (menuItem) {
+            case DVGAssetPickerMenuItemPhotoLibrary:
+                sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+                break;
+                
+            case DVGAssetPickerMenuItemCamera:
+                sourceType = UIImagePickerControllerSourceTypeCamera;
+                break;
+                
+            case DVGAssetPickerMenuItemCancel:
+                break;
+        }
+        
+        switch (menuItem) {
+            case DVGAssetPickerMenuItemPhotoLibrary:
+            case DVGAssetPickerMenuItemCamera: {
+                UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+                imagePickerController.delegate = self;
+                imagePickerController.allowsEditing = NO;
+                imagePickerController.sourceType = sourceType;
+                imagePickerController.mediaTypes = @[ (id)kUTTypeImage ];
+                [self presentViewController:imagePickerController animated:YES completion:nil];
+                break;
+            }
+                
+            case DVGAssetPickerMenuItemCancel:
+                break;
+        }
+    }];
 
 }
 
@@ -95,6 +125,21 @@ shouldChangeTextInRange: (NSRange) range
 -(void)contentPickerViewControllerDidCancel:(DVGAssetPickerViewController *)controller {
     [controller dismissViewControllerAnimated:YES completion:nil];
 
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    NSLog(@"%s %@", __PRETTY_FUNCTION__, info);
+    UIImage *chosenImage = info[UIImagePickerControllerOriginalImage]; //64 bit never gets here
+    self.wallPhoto.image = chosenImage;
+    [picker dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+ 
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end
