@@ -12,7 +12,7 @@
 @implementation WallDataObject
 
 -(void)sendToServer {
-    NSString *serverURL = @"10.0.20.141:3000/walls";
+    NSString *serverURL = @"http://10.0.20.141:3000/walls";
     
     NSData *imageData = UIImageJPEGRepresentation(self.image, 0.5);
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];

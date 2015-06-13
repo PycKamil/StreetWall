@@ -8,6 +8,7 @@
 
 #import "AddViewController.h"
 #import <DVGAssetPickerController/DVGAssetPickerViewController.h>
+#import "WallDataObject.h"
 
 @interface AddViewController ()<DVGAssetPickerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *wallPhoto;
@@ -17,6 +18,12 @@
 @implementation AddViewController
 - (IBAction)choosePhoto:(id)sender {
     [self pickImage];
+}
+- (IBAction)addTapped:(id)sender {
+    WallDataObject *wall = [WallDataObject new];
+    wall.image = self.wallPhoto.image;
+    [wall sendToServer];
+    
 }
 
 - (void)viewDidLoad {
