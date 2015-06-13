@@ -25,6 +25,7 @@ PODS:
     - TLLayoutTransitioning
   - DXCustomCallout-ObjC (0.2.0)
   - MagicalRecord (2.3.0)
+  - RNActivityView (0.0.6)
   - TLLayoutTransitioning (1.0.4):
     - AHEasing
 
@@ -33,6 +34,7 @@ DEPENDENCIES:
   - DVGAssetPickerController
   - DXCustomCallout-ObjC
   - MagicalRecord (~> 2.3)
+  - RNActivityView
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -40,6 +42,7 @@ SPEC CHECKSUMS:
   DVGAssetPickerController: 5406659c41f1c2d8bbcd79618394a4a4e4d47d23
   DXCustomCallout-ObjC: fb223603ee148365de51c2d69bb10443943ff89b
   MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  RNActivityView: 889126dc047fc6fa10aac88a13ebff677c53bf82
   TLLayoutTransitioning: 6a2694027ac0b3acbf8ec3d21a1185d761777740
 
 COCOAPODS: 0.35.0

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A6DAF71B5B91DEEBD7B6DC1"
+               BlueprintIdentifier = "C2ED6D45668D343B00A175FE"
                BuildableName = "libPods-StreetWall-DVGAssetPickerController.a"
                BlueprintName = "Pods-StreetWall-DVGAssetPickerController"
                ReferencedContainer = "container:Pods.xcodeproj">
