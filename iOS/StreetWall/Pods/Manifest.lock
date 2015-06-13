@@ -1,10 +1,19 @@
 PODS:
+  - AHEasing (1.2)
+  - DVGAssetPickerController (0.1.0):
+    - TLLayoutTransitioning
   - MagicalRecord (2.3.0)
+  - TLLayoutTransitioning (1.0.4):
+    - AHEasing
 
 DEPENDENCIES:
+  - DVGAssetPickerController
   - MagicalRecord (~> 2.3)
 
 SPEC CHECKSUMS:
+  AHEasing: 847f583bcd83a2bb850e38ccdb26d22e2593f34d
+  DVGAssetPickerController: 5406659c41f1c2d8bbcd79618394a4a4e4d47d23
   MagicalRecord: 89eb7d7ead39fb37f01c3d010665ee94d17f8dba
+  TLLayoutTransitioning: 6a2694027ac0b3acbf8ec3d21a1185d761777740
 
 COCOAPODS: 0.35.0

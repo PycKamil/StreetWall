@@ -4,7 +4,32 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DVGAssetPickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-AHEasing.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-DVGAssetPickerController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MagicalRecord.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-StreetWall-AHEasing.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-StreetWall-DVGAssetPickerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -14,7 +39,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-StreetWall-TLLayoutTransitioning.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-StreetWall.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-StreetWallTests-AHEasing.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-StreetWallTests-DVGAssetPickerController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -24,7 +64,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-StreetWallTests-TLLayoutTransitioning.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-StreetWallTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-TLLayoutTransitioning.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +87,82 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0059CDC8B9BE23C9B4DD3DB5</key>
+		<key>12CF92F6F1757B77DD46F538</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>467267D0E16A908A73F932F8</key>
+		<key>325A5A38E5B0CDC26DF3F23F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6952FEB5D3FEA69EFF0AB50D</key>
+		<key>3ABADF932DD326CEB41A6025</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6E01E32E99B5E8FEE0E3E9A8</key>
+		<key>3C4EE3ADBC83A9396032EC3C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8A808C937758FECE24A6AB88</key>
+		<key>452D432E1E2F3278F8491FC0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EA8E6942BF13DDC0B8CD6554</key>
+		<key>4CA541493BCB69B4DCD43E65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64F218D9EBB2B4611B7F823B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B56A5ADF203C360E6C66D78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7AFE54383C0BE9E9FBD73391</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7F27F0F477C24F61C5D3153A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>99AAECD2927F9EE9AB260B4F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B9A0784D49DCBBD80AD2E92C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E0A45EAF5AC2871CDDAB9AEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EA78E069238EB4867C07BADB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>ECAAA66ACC553CE3ADB63D70</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE4569E2D4656A6D152BE58A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

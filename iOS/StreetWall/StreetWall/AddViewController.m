@@ -7,8 +7,9 @@
 //
 
 #import "AddViewController.h"
+#import <DVGAssetPickerController/DVGAssetPickerViewController.h>
 
-@interface AddViewController ()
+@interface AddViewController ()<DVGAssetPickerDelegate>
 
 @end
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self pickImage];
     // Do any additional setup after loading the view.
 }
 
@@ -24,14 +26,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)pickImage {
+    DVGAssetPickerViewController *picker = [[DVGAssetPickerViewController alloc] init];
+    picker.delegate = self;
+    [self presentViewController:picker animated:YES completion:nil];
 }
-*/
+
+-(void)contentPickerViewController:(DVGAssetPickerViewController *)controller clickedMenuItem:(DVGAssetPickerMenuItem)menuItem {
+    [controller dismissViewControllerAnimated:YES completion:nil];
+
+}
+
+-(void)contentPickerViewController:(DVGAssetPickerViewController *)controller didSelectAssets:(NSArray *)assets {
+    [controller dismissViewControllerAnimated:YES completion:nil];
+
+}
+
+-(void)contentPickerViewControllerDidCancel:(DVGAssetPickerViewController *)controller {
+    [controller dismissViewControllerAnimated:YES completion:nil];
+
+}
 
 @end
