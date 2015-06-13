@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--Add View Controller-->
         <scene sceneID="Tx7-Yf-YQ2">
             <objects>
                 <viewController id="AaK-bA-tnl" customClass="AddViewController" sceneMemberID="viewController">
@@ -169,7 +169,7 @@
                             <constraint firstItem="1dP-77-7dF" firstAttribute="top" secondItem="pw7-Wp-YiK" secondAttribute="bottom" id="wXG-3f-M1a"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="eHr-CM-gf2"/>
+                    <tabBarItem key="tabBarItem" title="" image="plus_small" id="eHr-CM-gf2"/>
                     <connections>
                         <outlet property="commentTextView" destination="ikf-e4-eDo" id="2Gw-z6-ZoT"/>
                         <outlet property="heightLabel" destination="j6G-ux-0aX" id="KBB-hV-sK8"/>
@@ -188,7 +188,7 @@
             </objects>
             <point key="canvasLocation" x="277" y="118"/>
         </scene>
-        <!--Map-->
+        <!--Map View Controller-->
         <scene sceneID="wyP-xl-4RJ">
             <objects>
                 <viewController id="znq-ql-gTN" customClass="MapViewController" sceneMemberID="viewController">
@@ -196,7 +196,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Map" id="c4B-cI-mzq"/>
+                    <tabBarItem key="tabBarItem" title="" image="glyphicons-503-map" id="c4B-cI-mzq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h87-Ii-jAf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -328,6 +328,8 @@
         <image name="BlueCheckSelected@3x.png" width="93" height="93"/>
         <image name="glyphicons-12-camera" width="26" height="20"/>
         <image name="glyphicons-191-circle-plus-green" width="26" height="26"/>
+        <image name="glyphicons-503-map" width="23" height="23"/>
+        <image name="plus_small" width="26" height="26"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
