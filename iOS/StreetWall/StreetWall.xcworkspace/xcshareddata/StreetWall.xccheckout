@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5AE7F69A-CA9F-4DA7-8BAA-6185EDC874E2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StreetWall</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DD055CC8E6206ABC29833FDB0789D5454804A483</key>
+		<string>https://github.com/PycKamil/StreetWall.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOS/StreetWall/StreetWall.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DD055CC8E6206ABC29833FDB0789D5454804A483</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/PycKamil/StreetWall.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DD055CC8E6206ABC29833FDB0789D5454804A483</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DD055CC8E6206ABC29833FDB0789D5454804A483</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StreetWall</string>
+		</dict>
+	</array>
+</dict>
+</plist>
