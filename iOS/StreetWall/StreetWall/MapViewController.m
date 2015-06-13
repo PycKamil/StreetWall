@@ -12,10 +12,13 @@
 #import <DXCustomCallout-ObjC/DXAnnotationSettings.h>
 #import "CallOutView.h"
 #import <AFNetworking/AFNetworking.h>
+#import <AFNetworking/UIKit+AFNetworking.h>
+
 
 @interface DXAnnotation : NSObject <MKAnnotation>
 
 @property(nonatomic, assign) CLLocationCoordinate2D coordinate;
+@property(nonatomic, strong) NSString *imageURL;
 
 @end
 
@@ -68,7 +71,7 @@
     DXAnnotation *annotation1 = [DXAnnotation new];
     annotation1.coordinate = CLLocationCoordinate2DMake([calloutDict[@"latitude"] floatValue], [calloutDict[@"longitude"] floatValue]);
     [self.mapView addAnnotation:annotation1];
-    
+    annotation1.imageURL = calloutDict [@"image_url"];
     [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(annotation1.coordinate, 10000, 10000)];
 }
 
@@ -76,10 +79,12 @@
             viewForAnnotation:(id<MKAnnotation>)annotation {
     
     if ([annotation isKindOfClass:[DXAnnotation class]]) {
-        
+        DXAnnotation *annotationDX = (DXAnnotation*)annotation;
         UIView *pinView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"glyphicons-243-google-maps"]];
         
         CallOutView *calloutView = [[[NSBundle mainBundle] loadNibNamed:@"CallOutView" owner:self options:nil] firstObject];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@%@",@"http://10.0.20.141:3000/",annotationDX.imageURL]];
+        [calloutView.imageView setImageWithURL:url];
         [calloutView.showButton addTarget:self action:@selector(showDetails) forControlEvents:UIControlEventTouchUpInside];
         DXAnnotationView *annotationView = (DXAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:NSStringFromClass([DXAnnotationView class])];
         if (!annotationView) {

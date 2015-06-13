@@ -10,5 +10,6 @@
 
 @interface CallOutView : UIView
 @property (weak, nonatomic) IBOutlet UIButton *showButton;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
