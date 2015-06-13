@@ -14,5 +14,10 @@
 
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, assign) CLLocationCoordinate2D location;
+@property (nonatomic, strong) NSString *comment;
+@property (nonatomic, strong) NSNumber *height;
+@property (nonatomic, strong) NSNumber *width;
+
+- (void)sendToServer;
 
 @end

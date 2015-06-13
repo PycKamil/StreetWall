@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "81C1BEF503D0390C0A0241F2"
+               BlueprintIdentifier = "3C86A45D1BED019E933A58DE"
                BuildableName = "libPods-StreetWallTests-TLLayoutTransitioning.a"
                BlueprintName = "Pods-StreetWallTests-TLLayoutTransitioning"
                ReferencedContainer = "container:Pods.xcodeproj">

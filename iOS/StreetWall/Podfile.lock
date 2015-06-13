@@ -1,4 +1,25 @@
 PODS:
+  - AFNetworking (2.5.4):
+    - AFNetworking/NSURLConnection (= 2.5.4)
+    - AFNetworking/NSURLSession (= 2.5.4)
+    - AFNetworking/Reachability (= 2.5.4)
+    - AFNetworking/Security (= 2.5.4)
+    - AFNetworking/Serialization (= 2.5.4)
+    - AFNetworking/UIKit (= 2.5.4)
+  - AFNetworking/NSURLConnection (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.4)
+  - AFNetworking/Security (2.5.4)
+  - AFNetworking/Serialization (2.5.4)
+  - AFNetworking/UIKit (2.5.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - AHEasing (1.2)
   - DVGAssetPickerController (0.1.0):
     - TLLayoutTransitioning
@@ -8,11 +29,13 @@ PODS:
     - AHEasing
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.0)
   - DVGAssetPickerController
   - DXCustomCallout-ObjC
   - MagicalRecord (~> 2.3)
 
 SPEC CHECKSUMS:
+  AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   AHEasing: 847f583bcd83a2bb850e38ccdb26d22e2593f34d
   DVGAssetPickerController: 5406659c41f1c2d8bbcd79618394a4a4e4d47d23
   DXCustomCallout-ObjC: fb223603ee148365de51c2d69bb10443943ff89b
