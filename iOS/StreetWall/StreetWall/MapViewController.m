@@ -23,7 +23,7 @@
 @end
 
 @interface MapViewController () <MKMapViewDelegate>
-@property (weak, nonatomic) IBOutlet MKMapView *MapView;
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
 
@@ -32,16 +32,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.MapView.delegate = self;
+    self.mapView.delegate = self;
     [self addCallouts];
 }
 
 - (void)addCallouts {
     DXAnnotation *annotation1 = [DXAnnotation new];
     annotation1.coordinate = CLLocationCoordinate2DMake(12.9667, 77.5667);
-    [self.MapView addAnnotation:annotation1];
+    [self.mapView addAnnotation:annotation1];
     
-    [self.MapView setRegion:MKCoordinateRegionMakeWithDistance(annotation1.coordinate, 10000, 10000)];
+    [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(annotation1.coordinate, 10000, 10000)];
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView
@@ -67,7 +67,7 @@
 }
 
 - (void)showDetails {
-    
+    [self performSegueWithIdentifier:@"ShowWall" sender:self];
 }
 
 @end
