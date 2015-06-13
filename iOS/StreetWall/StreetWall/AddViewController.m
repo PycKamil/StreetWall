@@ -12,23 +12,29 @@
 
 @interface AddViewController ()<DVGAssetPickerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *wallPhoto;
+@property(nonatomic, strong) CLLocationManager *locationManager;
 
 @end
 
 @implementation AddViewController
+
 - (IBAction)choosePhoto:(id)sender {
     [self pickImage];
 }
+
 - (IBAction)addTapped:(id)sender {
     WallDataObject *wall = [WallDataObject new];
     wall.image = self.wallPhoto.image;
+    wall.location = self.locationManager.location.coordinate;
     [wall sendToServer];
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.locationManager = [[CLLocationManager alloc] init];
+    [self.locationManager requestWhenInUseAuthorization];
+    [self.locationManager startUpdatingLocation];
 }
 
 - (void)didReceiveMemoryWarning {
