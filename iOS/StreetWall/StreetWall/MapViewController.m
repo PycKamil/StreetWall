@@ -50,7 +50,7 @@
     
     if ([annotation isKindOfClass:[DXAnnotation class]]) {
         
-        UIView *pinView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"glyphicons-12-camera"]];
+        UIView *pinView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"glyphicons-243-google-maps"]];
         
         CallOutView *calloutView = [[[NSBundle mainBundle] loadNibNamed:@"CallOutView" owner:self options:nil] firstObject];
         [calloutView.showButton addTarget:self action:@selector(showDetails) forControlEvents:UIControlEventTouchUpInside];
