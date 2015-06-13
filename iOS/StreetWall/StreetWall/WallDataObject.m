@@ -16,7 +16,7 @@
     
     NSData *imageData = UIImageJPEGRepresentation(self.image, 0.5);
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    NSDictionary *parameters = @{@"foo": @"bar"};
+    NSDictionary *parameters = @{@"comment": self.comment, @"width":self.width,  @"height":self.height, @"lat":@(self.location.latitude), @"lon":@(self.location.longitude)};
     [manager POST:serverURL parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         [formData appendPartWithFormData:imageData name:@"image"];
     } success:^(AFHTTPRequestOperation *operation, id responseObject) {

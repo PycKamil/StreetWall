@@ -9,24 +9,41 @@
 #import "AddViewController.h"
 #import <DVGAssetPickerController/DVGAssetPickerViewController.h>
 #import "WallDataObject.h"
+#import <RNActivityView/UIView+RNActivityView.h>
 
-@interface AddViewController ()<DVGAssetPickerDelegate>
+@interface AddViewController ()<DVGAssetPickerDelegate, UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *wallPhoto;
 @property(nonatomic, strong) CLLocationManager *locationManager;
+@property (weak, nonatomic) IBOutlet UITextView *commentTextView;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperWidth;
+@property (weak, nonatomic) IBOutlet UIStepper *stepperHeight;
+@property (weak, nonatomic) IBOutlet UILabel *widthLabel;
+@property (weak, nonatomic) IBOutlet UILabel *heightLabel;
 
 @end
 
 @implementation AddViewController
+- (IBAction)heightChanged:(id)sender {
+    self.heightLabel.text = [NSString stringWithFormat:@"%ld m", (long)self.stepperHeight.value];
+}
 
 - (IBAction)choosePhoto:(id)sender {
     [self pickImage];
+}
+- (IBAction)widthChanged:(id)sender {
+    self.widthLabel.text = [NSString stringWithFormat:@"%ld m", (long)self.stepperWidth.value];
 }
 
 - (IBAction)addTapped:(id)sender {
     WallDataObject *wall = [WallDataObject new];
     wall.image = self.wallPhoto.image;
+    wall.width = @(self.stepperWidth.value);
+    wall.height = @(self.stepperHeight.value);
+    wall.comment = self.commentTextView.text;
     wall.location = self.locationManager.location.coordinate;
     [wall sendToServer];
+    [self.view showActivityViewWithLabel:@"Loading"];
+    [self.view hideActivityViewWithAfterDelay:1];
     
 }
 
@@ -35,11 +52,20 @@
     self.locationManager = [[CLLocationManager alloc] init];
     [self.locationManager requestWhenInUseAuthorization];
     [self.locationManager startUpdatingLocation];
+    
+    self.wallPhoto.layer.borderColor = [UIColor redColor].CGColor;
+    self.wallPhoto.layer.borderWidth = 2.0f;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (BOOL) textView: (UITextView*) textView
+shouldChangeTextInRange: (NSRange) range
+  replacementText: (NSString*) text
+{
+    if ([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    return YES;
 }
 
 - (void)pickImage {
@@ -56,7 +82,7 @@
 -(void)contentPickerViewController:(DVGAssetPickerViewController *)controller didSelectAssets:(NSArray *)assets {
     [controller dismissViewControllerAnimated:YES completion:nil];
     ALAsset *asset = [assets firstObject];
-    UIImage *image = [UIImage imageWithCGImage:asset.thumbnail];
+    UIImage *image = [UIImage imageWithCGImage:[[asset defaultRepresentation] fullResolutionImage]];
     self.wallPhoto.image = image;
 }
 
