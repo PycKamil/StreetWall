@@ -23,6 +23,7 @@
 @end
 
 @implementation AddViewController
+
 - (IBAction)heightChanged:(id)sender {
     self.heightLabel.text = [NSString stringWithFormat:@"%ld m", (long)self.stepperHeight.value];
 }
@@ -35,15 +36,20 @@
 }
 
 - (IBAction)addTapped:(id)sender {
+    [self.view showActivityViewWithLabel:@"Loading"];
     WallDataObject *wall = [WallDataObject new];
     wall.image = self.wallPhoto.image;
     wall.width = @(self.stepperWidth.value);
     wall.height = @(self.stepperHeight.value);
     wall.comment = self.commentTextView.text;
     wall.location = self.locationManager.location.coordinate;
-    [wall sendToServer];
-    [self.view showActivityViewWithLabel:@"Loading"];
-    [self.view hideActivityViewWithAfterDelay:1];
+    [wall sendToServerSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [self.view hideActivityViewWithAfterDelay:1];
+        [[[UIAlertView alloc] initWithTitle:@"Sukces" message:@"Dodano nowe miejsce!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        [self.view hideActivityView];
+         [[[UIAlertView alloc] initWithTitle:@"Błąd" message:@"Nie dodano nowego miejsca!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
+    }];
     
 }
 

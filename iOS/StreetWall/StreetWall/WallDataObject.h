@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <AFNetworking/AFNetworking.h>
 
 @interface WallDataObject : NSObject
 
@@ -18,6 +19,7 @@
 @property (nonatomic, strong) NSNumber *height;
 @property (nonatomic, strong) NSNumber *width;
 
-- (void)sendToServer;
+- (void)sendToServerSuccess:(void (^)(AFHTTPRequestOperation *operation, id responseObject))success
+failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure;
 
 @end

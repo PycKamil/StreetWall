@@ -11,7 +11,7 @@
 
 @implementation WallDataObject
 
--(void)sendToServer {
+-(void)sendToServerSuccess:(void (^)(AFHTTPRequestOperation *, id))success failure:(void (^)(AFHTTPRequestOperation *, NSError *))failure {
     NSString *serverURL = @"http://10.0.20.141:3000/walls";
     
     NSData *imageData = UIImageJPEGRepresentation(self.image, 0.5);
@@ -19,11 +19,7 @@
     NSDictionary *parameters = @{@"comment": self.comment, @"width":self.width,  @"height":self.height, @"lat":@(self.location.latitude), @"lon":@(self.location.longitude)};
     [manager POST:serverURL parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
         [formData appendPartWithFormData:imageData name:@"image"];
-    } success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        NSLog(@"Success: %@", responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
+    } success:success failure:failure];
     
 }
 
