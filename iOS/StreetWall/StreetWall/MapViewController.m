@@ -32,6 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.mapView = (MKMapView *)self.view;
     self.mapView.delegate = self;
     [self addCallouts];
 }
