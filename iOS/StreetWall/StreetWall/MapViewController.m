@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import <DXCustomCallout-ObjC/DXAnnotationView.h>
 #import <DXCustomCallout-ObjC/DXAnnotationSettings.h>
+#import "CallOutView.h"
 @interface DXAnnotation : NSObject <MKAnnotation>
 
 @property(nonatomic, assign) CLLocationCoordinate2D coordinate;
@@ -48,10 +49,10 @@
     
     if ([annotation isKindOfClass:[DXAnnotation class]]) {
         
-        UIView *pinView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pin"]];
+        UIView *pinView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"glyphicons-12-camera"]];
         
-        UIView *calloutView = [[[NSBundle mainBundle] loadNibNamed:@"myView" owner:self options:nil] firstObject];
-        
+        CallOutView *calloutView = [[[NSBundle mainBundle] loadNibNamed:@"CallOutView" owner:self options:nil] firstObject];
+        [calloutView.showButton addTarget:self action:@selector(showDetails) forControlEvents:UIControlEventTouchUpInside];
         DXAnnotationView *annotationView = (DXAnnotationView *)[mapView dequeueReusableAnnotationViewWithIdentifier:NSStringFromClass([DXAnnotationView class])];
         if (!annotationView) {
             annotationView = [[DXAnnotationView alloc] initWithAnnotation:annotation
@@ -65,9 +66,8 @@
     return nil;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)showDetails {
+    
 }
 
 @end
