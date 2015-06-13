@@ -11,6 +11,8 @@
 #import <DXCustomCallout-ObjC/DXAnnotationView.h>
 #import <DXCustomCallout-ObjC/DXAnnotationSettings.h>
 #import "CallOutView.h"
+#import <AFNetworking/AFNetworking.h>
+
 @interface DXAnnotation : NSObject <MKAnnotation>
 
 @property(nonatomic, assign) CLLocationCoordinate2D coordinate;
@@ -34,12 +36,37 @@
     // Do any additional setup after loading the view, typically from a nib.
     self.mapView = (MKMapView *)self.view;
     self.mapView.delegate = self;
-    [self addCallouts];
+    
+  
 }
 
-- (void)addCallouts {
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.mapView removeAnnotations:self.mapView.annotations];
+    
+    NSString *serverURL = @"http://10.0.20.141:3000/walls.json";
+    NSURL *URL = [NSURL URLWithString:serverURL];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    AFHTTPRequestOperation *op = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    op.responseSerializer = [AFJSONResponseSerializer serializer];
+    [op setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [self addLocations:responseObject];
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"Error: %@", error);
+    }];
+    [[NSOperationQueue mainQueue] addOperation:op];
+    
+}
+
+- (void)addLocations: (NSArray *)locations {
+    for (NSDictionary *callOutDict in locations) {
+        [self addCallout:callOutDict];
+    }
+}
+
+- (void)addCallout:(NSDictionary *)calloutDict {
     DXAnnotation *annotation1 = [DXAnnotation new];
-    annotation1.coordinate = CLLocationCoordinate2DMake(12.9667, 77.5667);
+    annotation1.coordinate = CLLocationCoordinate2DMake([calloutDict[@"latitude"] floatValue], [calloutDict[@"longitude"] floatValue]);
     [self.mapView addAnnotation:annotation1];
     
     [self.mapView setRegion:MKCoordinateRegionMakeWithDistance(annotation1.coordinate, 10000, 10000)];
