@@ -32,9 +32,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1AD-J2-8yA">
-                                <rect key="frame" x="0.0" y="98" width="321" height="154"/>
+                                <rect key="frame" x="0.0" y="98" width="321" height="199"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="154" id="aAC-3U-eLf"/>
+                                    <constraint firstAttribute="height" constant="199" id="aAC-3U-eLf"/>
                                 </constraints>
                             </imageView>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="pJe-uo-RbS">
