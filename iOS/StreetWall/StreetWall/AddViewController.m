@@ -10,10 +10,14 @@
 #import <DVGAssetPickerController/DVGAssetPickerViewController.h>
 
 @interface AddViewController ()<DVGAssetPickerDelegate>
+@property (weak, nonatomic) IBOutlet UIImageView *wallPhoto;
 
 @end
 
 @implementation AddViewController
+- (IBAction)choosePhoto:(id)sender {
+    [self pickImage];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
