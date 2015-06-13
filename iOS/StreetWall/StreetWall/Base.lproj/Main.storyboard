@@ -115,6 +115,24 @@
             </objects>
             <point key="canvasLocation" x="277.86666666666667" y="-508.36000000000001"/>
         </scene>
+        <!--Wall View Controller-->
+        <scene sceneID="1Gp-z2-D3b">
+            <objects>
+                <viewController id="ppj-0S-2hM" customClass="WallViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hia-gw-K45"/>
+                        <viewControllerLayoutGuide type="bottom" id="uUY-nU-D0p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qps-jg-NtW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q0f-vq-Kwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690" y="-509"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="qtw-4n-lxc">
             <objects>

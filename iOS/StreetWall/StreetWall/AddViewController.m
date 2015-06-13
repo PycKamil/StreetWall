@@ -21,7 +21,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self pickImage];
     // Do any additional setup after loading the view.
 }
 
@@ -43,7 +42,9 @@
 
 -(void)contentPickerViewController:(DVGAssetPickerViewController *)controller didSelectAssets:(NSArray *)assets {
     [controller dismissViewControllerAnimated:YES completion:nil];
-
+    ALAsset *asset = [assets firstObject];
+    UIImage *image = [UIImage imageWithCGImage:asset.thumbnail];
+    self.wallPhoto.image = image;
 }
 
 -(void)contentPickerViewControllerDidCancel:(DVGAssetPickerViewController *)controller {
