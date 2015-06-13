@@ -20,6 +20,7 @@
 		1726D25D1B2C2FB0006A27F3 /* WallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1726D25C1B2C2FB0006A27F3 /* WallViewController.m */; };
 		17A3043F1B2C45B600089CB7 /* CallOutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A3043E1B2C45B600089CB7 /* CallOutView.xib */; };
 		17A304421B2C469F00089CB7 /* CallOutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A304411B2C469F00089CB7 /* CallOutView.m */; };
+		17A304451B2C499500089CB7 /* WallDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A304441B2C499500089CB7 /* WallDataObject.m */; };
 		3A005FA61AB3575BC845D1AD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0366B89CB12EEA6A80F49E87 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		17A3043E1B2C45B600089CB7 /* CallOutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CallOutView.xib; sourceTree = "<group>"; };
 		17A304401B2C469F00089CB7 /* CallOutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallOutView.h; sourceTree = "<group>"; };
 		17A304411B2C469F00089CB7 /* CallOutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallOutView.m; sourceTree = "<group>"; };
+		17A304431B2C499500089CB7 /* WallDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallDataObject.h; sourceTree = "<group>"; };
+		17A304441B2C499500089CB7 /* WallDataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallDataObject.m; sourceTree = "<group>"; };
 		4B943E8A5ED49ECAB5278764 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		60C4A370F7A8073E9358E790 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +124,8 @@
 				1726D23F1B2C25D7006A27F3 /* LaunchScreen.xib */,
 				1726D2341B2C25D7006A27F3 /* StreetWall.xcdatamodeld */,
 				1726D22D1B2C25D7006A27F3 /* Supporting Files */,
+				17A304431B2C499500089CB7 /* WallDataObject.h */,
+				17A304441B2C499500089CB7 /* WallDataObject.m */,
 			);
 			path = StreetWall;
 			sourceTree = "<group>";
@@ -309,6 +314,7 @@
 				1726D25A1B2C2FA0006A27F3 /* AddViewController.m in Sources */,
 				1726D2361B2C25D7006A27F3 /* StreetWall.xcdatamodeld in Sources */,
 				1726D2331B2C25D7006A27F3 /* AppDelegate.m in Sources */,
+				17A304451B2C499500089CB7 /* WallDataObject.m in Sources */,
 				1726D2391B2C25D7006A27F3 /* MapViewController.m in Sources */,
 				17A304421B2C469F00089CB7 /* CallOutView.m in Sources */,
 				1726D2301B2C25D7006A27F3 /* main.m in Sources */,
